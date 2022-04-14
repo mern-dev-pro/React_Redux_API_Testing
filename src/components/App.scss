@@ -1,0 +1,37 @@
+@import '../variables';
+@import '~bootstrap/scss/bootstrap';
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: $dark;
+  color: white;
+  font-size: 0.8rem;
+
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background: rgba(black, 0.2);
+
+    a {
+      display: flex;
+      color: #ddd;
+      text-decoration: none;
+      padding: 3rem;
+      &:hover,
+      &.active {
+        color: white;
+      }
+    }
+  }
+}

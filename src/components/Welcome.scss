@@ -1,0 +1,49 @@
+@import '../variables';
+
+.Welcome {
+  padding: 3rem;
+  line-height: 1.5;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    max-width: 15rem;
+
+    i {
+      display: block;
+    }
+  }
+
+  ol {
+    padding: 0;
+
+    li {
+      font-weight: bold;
+      display: flex;
+
+      .form-check {
+        margin-left: auto;
+        font-weight: normal;
+        user-select: none;
+
+        input {
+          margin-left: 0;
+          box-shadow:  none;
+        }
+
+        label {
+          display: flex;
+          width: 4rem;
+          cursor: pointer;
+          padding-left: 0.5rem;
+
+          svg {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+}
